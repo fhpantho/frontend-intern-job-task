@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Login from "../pages/Login";
 import Error from "../pages/Error";
 import DashboardLayout from "../pages/DashboardLayout";
+import DashBoard from "../components/DashBoard";
 
 export const router = createBrowserRouter(
     [
@@ -19,6 +20,13 @@ export const router = createBrowserRouter(
             Component :DashboardLayout,
             children:[
 
+                {
+                    index : true,
+                    Component : DashBoard
+                },
+                {
+                    
+                }
             ]
 
         }

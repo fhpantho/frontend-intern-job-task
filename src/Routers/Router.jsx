@@ -4,6 +4,7 @@ import Error from "../pages/Error";
 
 export const router = createBrowserRouter(
     [
+        // The Login Layout before dive to the Dashboard Pages
         {
             path: "/",
             Component: Login,

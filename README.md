@@ -89,5 +89,3 @@ Open the app at the dev server URL (usually http://localhost:5173).
 This repository is for an intern task — check with the owner for reuse permissions.
 
 ---
-
-If you want, I can also run the dev server locally, add an environment config, or generate a short CONTRIBUTING guide.

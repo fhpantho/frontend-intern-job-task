@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import Login from "../pages/Login";
-import Error from "../pages/Error";
+import Error from "../pages/NotFound";
 import DashboardLayout from "../pages/DashboardLayout";
 import DashBoard from "../components/Dashboard/DashBoard";
 import PrivateRoute from "./PrivetRoute";

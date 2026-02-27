@@ -59,14 +59,14 @@ const DashBoard = () => {
 
   return (
     <div className="p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 grid-rows-4 sm:grid-rows-2 sm:grid-cols-2  gap-6">
         {stats.map((item, index) => {
           const Icon = item.icon;
 
           return (
             <div
               key={index}
-              className="bg-white shadow-md rounded-2xl p-6 flex items-center justify-between hover:shadow-lg transition"
+              className="bg-white shadow-md rounded-2xl p-6 flex items-center justify-between hover:shadow-lg transition h-40"
             >
               <div>
                 <p className="text-gray-500 text-sm">{item.title}</p>

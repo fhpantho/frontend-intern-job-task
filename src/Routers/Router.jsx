@@ -2,8 +2,11 @@ import { createBrowserRouter } from "react-router";
 import Login from "../pages/Login";
 import Error from "../pages/Error";
 import DashboardLayout from "../pages/DashboardLayout";
-import DashBoard from "../components/DashBoard";
+import DashBoard from "../components/Dashboard/DashBoard";
 import PrivateRoute from "./PrivetRoute";
+import Analytics from "../components/Dashboard/Analytics";
+import Users from "../components/Dashboard/Users";
+import Products from "../components/Dashboard/Products";
 
 export const router = createBrowserRouter(
     [
@@ -25,8 +28,22 @@ export const router = createBrowserRouter(
                     index : true,
                     Component : DashBoard
                 },
+                // {
+                //     path : "overview",
+                //     Component : DashBoard
+
+                // },
                 {
-                    
+                    path : "analytics",
+                    Component : Analytics
+                },
+                {
+                    path : "users",
+                    Component : Users
+                },
+                {
+                    path : "products",
+                    Component : Products
                 }
             ]
 

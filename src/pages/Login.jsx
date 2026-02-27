@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { toast } from "react-toastify";
-import AuthLoader from "../components/AuthLoader";
+import AuthLoader from "../components/Lodder/AuthLoader";
 
 const Login = () => {
 

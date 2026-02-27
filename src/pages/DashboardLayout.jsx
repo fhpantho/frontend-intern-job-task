@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Outlet, NavLink } from "react-router";
 import { FaTachometerAlt, FaChartBar, FaUsers, FaBox } from "react-icons/fa";
+import LogoutButton from "../components/LogOutButton";
 
 const DashboardLayout = () => {
 
@@ -31,6 +32,10 @@ const DashboardLayout = () => {
         <h2 className="text-lg font-semibold text-gray-800">
           Dashboard
         </h2>
+
+        <div>
+            <LogoutButton></LogoutButton>
+        </div>
 
       </div>
 

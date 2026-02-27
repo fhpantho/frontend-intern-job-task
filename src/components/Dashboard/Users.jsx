@@ -1,11 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import UsersLoader from "../Lodder/UsersLoader";
+import { useNavigate } from "react-router";
 
 const Users = () => {
 
     const [users, setUsers] = useState(null);
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -66,7 +68,7 @@ const Users = () => {
             </div>
 
             {/* Button */}
-            <button className="bg-green-700 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-800 transition">
+            <button onClick={() => navigate(`/dashboard/users/${user.id}`)} className="bg-green-700 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-800 transition">
               View Details
             </button>
 

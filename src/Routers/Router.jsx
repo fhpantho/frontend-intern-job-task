@@ -8,6 +8,7 @@ import Analytics from "../components/Dashboard/Analytics";
 import Users from "../components/Dashboard/Users";
 import Products from "../components/Dashboard/Products";
 import ProductDetails from "../components/Dashboard/ProductDetails";
+import UserDetails from "../components/Dashboard/UserDetails";
 
 export const router = createBrowserRouter(
     [
@@ -40,7 +41,7 @@ export const router = createBrowserRouter(
                 },
                 {
                     path : "users/:id",
-                    Component : Users
+                    Component : UserDetails
                 },
                 {
                     path : "products",

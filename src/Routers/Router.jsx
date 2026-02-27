@@ -3,6 +3,7 @@ import Login from "../pages/Login";
 import Error from "../pages/Error";
 import DashboardLayout from "../pages/DashboardLayout";
 import DashBoard from "../components/DashBoard";
+import PrivateRoute from "./PrivetRoute";
 
 export const router = createBrowserRouter(
     [
@@ -17,7 +18,7 @@ export const router = createBrowserRouter(
         // the Dashboard Page after succesfully login
         {
             path : "/dashboard",
-            Component :DashboardLayout,
+            element : <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
             children:[
 
                 {

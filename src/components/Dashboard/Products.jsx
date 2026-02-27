@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProductsLoader from "../Lodder/ProductsLoader";
+import { useNavigate } from "react-router";
 
 
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -49,7 +51,7 @@ const Products = () => {
             </div>
 
             {/* Button */}
-            <button className="bg-green-700 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-800 transition">
+            <button onClick={() => navigate(`/dashboard/products/${product.id}`)} className="bg-green-700 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-800 transition">
               View Details
             </button>
           </div>

@@ -7,6 +7,7 @@ import PrivateRoute from "./PrivetRoute";
 import Analytics from "../components/Dashboard/Analytics";
 import Users from "../components/Dashboard/Users";
 import Products from "../components/Dashboard/Products";
+import ProductDetails from "../components/Dashboard/ProductDetails";
 
 export const router = createBrowserRouter(
     [
@@ -28,11 +29,7 @@ export const router = createBrowserRouter(
                     index : true,
                     Component : DashBoard
                 },
-                // {
-                //     path : "overview",
-                //     Component : DashBoard
-
-                // },
+                
                 {
                     path : "analytics",
                     Component : Analytics
@@ -42,8 +39,16 @@ export const router = createBrowserRouter(
                     Component : Users
                 },
                 {
+                    path : "users/:id",
+                    Component : Users
+                },
+                {
                     path : "products",
                     Component : Products
+                },
+                {
+                    path : "products/:id",
+                    Component : ProductDetails
                 }
             ]
 

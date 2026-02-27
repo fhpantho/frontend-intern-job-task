@@ -1,18 +1,93 @@
-# React + Vite
+# Frontend Intern Job Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React + Vite dashboard application built as a frontend intern task. The app includes authentication, user and product management views, analytics charts, and loading states.
 
-Currently, two official plugins are available:
+**Features**
+- **Authentication:** Login flow and protected routes.
+- **Dashboard:** Overview metrics and animated widgets.
+- **Users & Products:** Listings, details, and drill-down views.
+- **Analytics:** Charts and visualizations using Recharts.
+- **Loaders:** Dedicated loading components for UX while data loads.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Tech Stack**
+- React 19
+- Vite
+- Tailwind CSS
+- Axios
+- React Router
+- Recharts
+- Framer Motion
+- React Toastify
+- ESLint
 
-## React Compiler
+**Quick Start**
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Prerequisites: Node.js and a package manager (`npm` or `yarn`).
 
-Note: This will impact Vite dev & build performances.
+Install dependencies:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+# or
+yarn
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Run the dev server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Build for production:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+# or
+yarn preview
+```
+
+Lint the codebase:
+
+```bash
+npm run lint
+# or
+yarn lint
+```
+
+Open the app at the dev server URL (usually http://localhost:5173).
+
+**Project Structure (important files)**
+- `src/main.jsx` — app entry and global providers. See [src/main.jsx](src/main.jsx)
+- `src/pages/Login.jsx` — login page and auth flow. See [src/pages/Login.jsx](src/pages/Login.jsx)
+- `src/pages/DashboardLayout.jsx` — app layout used for protected routes. See [src/pages/DashboardLayout.jsx](src/pages/DashboardLayout.jsx)
+- `src/components/Dashboard/DashBoard.jsx` — dashboard view and widgets. See [src/components/Dashboard/DashBoard.jsx](src/components/Dashboard/DashBoard.jsx)
+- `src/components/Dashboard/Analytics.jsx` — charting and analytics. See [src/components/Dashboard/Analytics.jsx](src/components/Dashboard/Analytics.jsx)
+- `src/Routers/Router.jsx` — route definitions. See [src/Routers/Router.jsx](src/Routers/Router.jsx)
+- `src/Routers/PrivetRoute.jsx` — protected route wrapper. See [src/Routers/PrivetRoute.jsx](src/Routers/PrivetRoute.jsx)
+- `src/components/Lodder` — loaders used across pages. See [src/components/Lodder](src/components/Lodder)
+
+**Configuration & Notes**
+- The project uses Tailwind CSS. Check `tailwind.config.js` if present.
+- API endpoints are configured where `axios` is used; update base URLs in the relevant service files if needed.
+- ESLint is configured; run `npm run lint` to see issues.
+
+**Next steps**
+- Start the dev server and verify flows (login, dashboard, users, products).
+- Add environment-based API configuration if integrating with a remote backend.
+
+**License**
+This repository is for an intern task — check with the owner for reuse permissions.
+
+---
+
+If you want, I can also run the dev server locally, add an environment config, or generate a short CONTRIBUTING guide.
